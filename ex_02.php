@@ -5,12 +5,17 @@ Além disso, exiba a quantidade de caracteres existentes na string original. -->
 
 <?php 
 
-function inverterTexto(){
+function inverterTexto($palavra){
 
-    
+   echo "A palavra invertida é: ", strrev($palavra) ;
+   
+   echo "<br> Quantidade de letras da palavra: ", strlen($palavra);
 
 }
 
-$palavra = 'Brasil'
+$palavra = 'Brasil';
+
+inverterTexto($palavra);
+
 
 ?>
