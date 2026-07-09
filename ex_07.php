@@ -15,22 +15,28 @@ function calcularDesconto($valor){
 
     if($compra <= 100){
         $final = $compra;
+        $desconto = $compra - $final;
     }
     elseif($compra <= 500){
         $final = $compra * 0.9;
+        $desconto = $compra - $final;
     }
     elseif($compra <= 1000){
         $final = $compra * 0.8;
+        $desconto = $compra - $final;
     }
     else{
         $final = $compra * 0.7;
+        $desconto = $compra - $final;
     }
 
-    echo 'O valor total da compra é ' . $final;
+    echo 'O valor original da compra é R$ ' . $valor;
+    echo '<br>O valo do desconto é R$ ' . $desconto;
+    echo '<br>O avlor final da compra é R$ '. $final;
 
 }
 
-$valor = 100;
+$valor = 1000;
 
 calcularDesconto($valor);
 
